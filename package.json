@@ -1,0 +1,41 @@
+{
+  "name": "serverless-autoprune-plugin",
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=4.0"
+  },
+  "description": "Serverless plugin",
+  "author": "serverless.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Titozzz/serverless-autoprune-plugin"
+  },
+  "keywords": [
+    "serverless framework plugin",
+    "serverless applications",
+    "serverless plugins",
+    "api gateway",
+    "lambda",
+    "aws",
+    "aws lambda",
+    "amazon",
+    "amazon web services",
+    "serverless.com"
+  ],
+  "main": "dist/index.js",
+  "bin": {},
+  "dependencies": {
+    "aws-sdk": "^2.7.25",
+    "babel-runtime": "^6.20.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-0": "^6.16.0"
+  },
+  "scripts": {
+    "build": "babel --copy-files --plugins transform-runtime --presets es2015,stage-0 -d dist/ src/"
+  }
+}
